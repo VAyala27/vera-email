@@ -1,0 +1,1565 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .two-col-img {
+        width: 300px;
+        max-width: 300px;
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .btn {
+          padding: 10px 20px !important;
+          font-size: 14px !important;
+        }
+        .two-col-img {
+          max-width: 100% !important;
+          min-width: 50% !important;
+          width: 100% !important;
+          height: 100% !important;
+          max-height: 100% !important;
+          min-height: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 0px !important;
+        }
+      }
+      @media only screen and (max-width: 399.98px) {
+        .two-col-img {
+          max-width: 100% !important;
+          min-width: 50% !important;
+          width: 100% !important;
+          height: 100% !important;
+          max-height: 100% !important;
+          min-height: 100% !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 0px !important;
+        }
+
+        .footer .content p a {
+          font-size: 10px !important;
+        }
+        .footer .content p {
+          font-size: 10px !important;
+        }
+
+        .btn {
+          padding: 10px 20px !important;
+          font-size: 13px !important;
+        }
+      }
+
+      /* Custom Dark Mode Colors */
+
+      @media (prefers-color-scheme: dark) {
+        .sub-header .column p {
+          color: #383633 !important;
+        }
+      }
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+    <!-- Gmail hack -->
+    <div
+      style="
+        display: none;
+        white-space: nowrap;
+        font: 15px courier;
+        color: #ffffff;
+        line-height: 0;
+        width: 600px !important;
+        min-width: 600px !important;
+        max-width: 600px !important;
+      "
+    >
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    </div>
+    <!-- /Gmail hack -->
+
+    <!-- Start of HTML EMAIL -->
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <!-- Start of container -->
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!--Start of one-col header -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="header"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                  <table width="100%" style="border-spacing: 0;" role="presentation">
+                                  <tr>
+                                  <td width="600" valign="top" style="padding: 0;">
+                               <![endif]-->
+
+                    <table
+                      class="one-column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 20px 0px 0px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <img
+                                  class="logo"
+                                  style="width: 200px; max-width: 100%"
+                                  src="https://i.postimg.cc/sx2jyKjh/vera-logo.png"
+                                  alt="logo"
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                          </td>
+                        </tr>
+                      </table>
+                        <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="header"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                      <table width="100%" style="border-spacing: 0;" role="presentation">
+                                      <tr>
+                                      <td width="600" valign="top" style="padding: 0;">
+                                   <![endif]-->
+
+                    <table
+                      class="one-column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 0px 0px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <img
+                                  style="width: 600px; max-width: 100%"
+                                  src="https://i.postimg.cc/vBtTGc5p/vera-free-shipping.png"
+                                  alt="vera-free-shipping"
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                              </td>
+                            </tr>
+                          </table>
+                            <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="header"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                      <table width="100%" style="border-spacing: 0;" role="presentation">
+                                      <tr>
+                                      <td width="600" valign="top" style="padding: 0;">
+                                   <![endif]-->
+
+                    <table
+                      class="one-column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 10px 0px 10px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <img
+                                  style="width: 600px; max-width: 100%"
+                                  src="https://i.postimg.cc/3wpWbLNr/vera-afterpay.jpg"
+                                  alt="vera-afterpay"
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                              </td>
+                            </tr>
+                          </table>
+                            <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0; text-align: center">
+                    <!--[if (gte mso 9)|(IE)]>
+                                      <table width="100%" style="border-spacing: 0;" role="presentation">
+                                      <tr>
+                                      <td width="600" valign="top" style="padding: 0;">
+                                   <![endif]-->
+
+                    <table
+                      class="one-column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 10px 0px 10px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <img
+                                  style="width: 600px; max-width: 100%"
+                                  src="https://i.postimg.cc/3x0wdLgj/vera-hero.jpg"
+                                  alt="vera-hero"
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                              </td>
+                            </tr>
+                          </table>
+                            <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0; text-align: center">
+                    <!--[if (gte mso 9)|(IE)]>
+                                          <table width="100%" style="border-spacing: 0;" role="presentation">
+                                          <tr>
+                                          <td width="600" valign="top" style="padding: 0;">
+                                       <![endif]-->
+
+                    <table
+                      class="one-column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 10px 0px 10px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <img
+                                  style="width: 600px; max-width: 100%"
+                                  src="https://i.postimg.cc/3x0wdLgj/vera-hero.jpg"
+                                  alt="vera-hero"
+                                />
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td style="background-color: #035759">
+                                <p
+                                  style="
+                                    color: #ffffff;
+                                    font-size: 20px;
+                                    font-family: 'Avenir', sans-serif,
+                                      Helvetica Neue, Arial, sans-serif;
+                                    line-height: 30px;
+                                    font-weight: 300;
+                                    letter-spacing: 0.3px;
+                                    padding: 5px 10px 10px 10px;
+                                  "
+                                >
+                                  Look no further — Oprah Daily has picked top
+                                  styles for the season!
+                                </p>
+
+                                <p style="margin: 0; margin-bottom: 20px">
+                                  <a
+                                    style="
+                                      font-family: 'Avenir', sans-serif,
+                                        Helvetica Neue, Arial, sans-serif;
+                                      font-size: 16px;
+                                      line-height: 26px;
+                                      font-weight: 900;
+                                      color: #035859;
+                                      text-align: center;
+                                      padding: 15px 30px;
+                                      background-color: #ffffff;
+                                      text-transform: uppercase;
+                                      letter-spacing: 1px;
+                                      display: inline-block;
+                                      text-decoration: none;
+                                      width: 125px;
+                                    "
+                                    class="btn"
+                                    href="http://example.com"
+                                  >
+                                    Shop Now
+                                  </a>
+                                </p>
+
+                                <p style="margin: 0; margin-bottom: 20px">
+                                  <a
+                                    style="
+                                      font-family: 'Avenir', sans-serif,
+                                        Helvetica Neue, Arial, sans-serif;
+                                      font-size: 16px;
+                                      line-height: 26px;
+                                      font-weight: 900;
+                                      color: #ffffff;
+                                      text-align: center;
+                                      padding: 15px 30px;
+                                      border: 2px solid #ffffff;
+                                      text-transform: uppercase;
+                                      letter-spacing: 1px;
+                                      display: inline-block;
+                                      text-decoration: none;
+                                      width: 125px;
+                                    "
+                                    class="btn"
+                                    href="http://example.com"
+                                  >
+                                    Find A Store
+                                  </a>
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                  </td>
+                                </tr>
+                              </table>
+                                <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 0px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="two-columns" style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                         <table width="100%" style="border-spacing: 0;" role="presentation">
+                         <tr>
+                         <td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    class="two-col-img"
+                                    src="https://i.postimg.cc/Bvmpvc20/vera-totes-bag-1.jpg"
+                                    alt="vera-totes-bag-1"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    class="two-col-img"
+                                    src="https://i.postimg.cc/Wzf24rzf/vera-totes-bag-2.jpg"
+                                    alt="vera-totes-bag-2"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                         </td>
+                         </tr>
+                         </table>
+                      <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 0px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="two-columns" style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                         <table width="100%" style="border-spacing: 0;" role="presentation">
+                         <tr>
+                         <td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    class="two-col-img"
+                                    src="https://i.postimg.cc/rFPmy6tF/vera-home-1.jpg"
+                                    alt="vera-totes-bag-1"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    class="two-col-img"
+                                    src="https://i.postimg.cc/yYdxz6xb/vera-home-2.jpg"
+                                    alt="vera-totes-bag-2"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                         </td>
+                         </tr>
+                         </table>
+                      <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 0px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="two-columns" style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                         <table width="100%" style="border-spacing: 0;" role="presentation">
+                         <tr>
+                         <td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    class="two-col-img"
+                                    src="https://i.postimg.cc/sfnfKFm9/vera-wearables-1.jpg"
+                                    alt="vera-totes-bag-1"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="50%" valign="top" style="padding: 0;">
+                      <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    class="two-col-img"
+                                    src="https://i.postimg.cc/3Jd8cLbM/vera-wearables-2.jpg"
+                                    alt="vera-wearables-2"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                         </td>
+                         </tr>
+                         </table>
+                      <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 0px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td class="two-columns" style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                                     <table width="100%" style="border-spacing: 0;" role="presentation">
+                                     <tr>
+                                     <td width="50%" valign="top" style="padding: 0;">
+                                  <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    class="two-col-img"
+                                    src="https://i.postimg.cc/j28jJmgc/vera-crossbody-bags-1.jpg"
+                                    alt="vera-crossbody-bags-1"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                  </td><td width="50%" valign="top" style="padding: 0;">
+                                  <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        max-width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="https://example.com" target="_blank">
+                                  <img
+                                    class="two-col-img"
+                                    src="https://i.postimg.cc/QNSCPK87/vera-crossbody-bags-2.jpg"
+                                    alt="vera-crossbody-bags-2"
+                                    border="0"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                     </td>
+                                     </tr>
+                                     </table>
+                                  <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0; text-align: center">
+                    <!--[if (gte mso 9)|(IE)]>
+                            <table width="100%" style="border-spacing: 0;" role="presentation">
+                            <tr>
+                            <td width="600" valign="top" style="padding: 0;">
+                         <![endif]-->
+
+                    <table
+                      class="one-column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 0px 0px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <img
+                                  style="width: 600px; max-width: 100%"
+                                  src="https://i.postimg.cc/Y0290M3j/vera-blanket.jpg"
+                                  alt="vera-blanket"
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                  </tr>
+                </table>
+                  <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0; text-align: center">
+                    <!--[if (gte mso 9)|(IE)]>
+                                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                                        <tr>
+                                        <td width="600" valign="top" style="padding: 0;">
+                                     <![endif]-->
+
+                    <table
+                      class="one-column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 0px 0px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <p
+                                  style="
+                                    color: #000000;
+                                    font-size: 12px;
+                                    font-family: 'Avenir', sans-serif,
+                                      Helvetica Neue, Arial, sans-serif;
+                                    line-height: 18px;
+                                    font-weight: 300;
+                                    letter-spacing: 0.3px;
+                                    padding: 65px 20px 0px 20px;
+                                    margin: 0;
+                                    text-align: center;
+                                  "
+                                >
+                                  <br />
+                                  *Discount taken at Checkout. U.S. orders only.
+                                  <br />
+                                  **Items priced as marked. U.S. orders only.
+                                  Plush Throw Blanket available in select colors
+                                  only.
+                                  <br />
+                                  Excludes Star Wars™, Harry Potter™ and Disney
+                                  collections. Special pricing cannot be
+                                  combined with other offers.
+                                </p>
+
+                                <p
+                                  style="
+                                    margin: 0;
+                                    padding: 0px 0px 65px 0px;
+                                    text-align: center;
+                                  "
+                                >
+                                  <a
+                                    style="
+                                      color: #000000;
+                                      font-size: 12px;
+                                      font-family: 'Avenir', sans-serif,
+                                        Helvetica Neue, Arial, sans-serif;
+                                      line-height: 18px;
+                                      font-weight: 300;
+                                      letter-spacing: 0.3px;
+                                      text-decoration: underline;
+                                    "
+                                    href="http://example.com"
+                                  >
+                                    TERMS AND CONDITIONS
+                                  </a>
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                              </tr>
+                            </table>
+                              <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0; text-align: center">
+                    <!--[if (gte mso 9)|(IE)]>
+                                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                                        <tr>
+                                        <td width="600" valign="top" style="padding: 0;">
+                                     <![endif]-->
+
+                    <table
+                      class="one-column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 0px 0px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <img
+                                  style="width: 600px; max-width: 100%"
+                                  src="https://i.postimg.cc/KjzQMm64/vera-stay-in-the-know.jpg"
+                                  alt="vera-stay-in-the-know"
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                              </tr>
+                            </table>
+                              <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col change -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                                          <table width="100%" style="border-spacing: 0;" role="presentation">
+                                          <tr>
+                                          <td width="600" valign="top" style="padding: 0;">
+                                       <![endif]-->
+
+                    <table
+                      class="one-column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 0px 30px 0px">
+                          <table
+                            class="content"
+                            style="
+                              border-spacing: 0;
+                              width: 600px;
+                              max-width: 100%;
+                            "
+                            role="presentation"
+                          >
+                            <tr>
+                              <td style="padding: 0">
+                                <table
+                                  width="100%"
+                                  style="border-spacing: 0"
+                                  role="presentation"
+                                >
+                                  <tr>
+                                    <td
+                                      style="
+                                        text-align: center;
+                                        padding: 10px 0px 8px 0px;
+                                      "
+                                    >
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        <img
+                                          style="padding: 0px 10px"
+                                          src="https://i.postimg.cc/tR8mXNJp/instagram.png"
+                                          width="32px"
+                                          border="0"
+                                          title="instagram"
+                                          alt="instagram"
+                                        />
+                                      </a>
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        <img
+                                          style="padding: 0px 10px"
+                                          src="https://i.postimg.cc/Jz5T5wqz/twitter.png"
+                                          width="32px"
+                                          border="0"
+                                          title="twitter"
+                                          alt="twitter"
+                                        />
+                                      </a>
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        <img
+                                          style="padding: 0px 10px"
+                                          src="https://i.postimg.cc/nr97R7f1/facebook.png"
+                                          width="32px"
+                                          border="0"
+                                          title="facebook"
+                                          alt="facebook"
+                                        />
+                                      </a>
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        <img
+                                          style="padding: 0px 10px"
+                                          src="https://i.postimg.cc/NMJdQgzG/pinterest.png"
+                                          width="32px"
+                                          border="0"
+                                          title="pinterest"
+                                          alt="pinterest"
+                                        />
+                                      </a>
+                                      <a
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        <img
+                                          style="padding: 0px 10px"
+                                          src="https://i.postimg.cc/wjg45bLp/youtube.png"
+                                          width="32px"
+                                          border="0"
+                                          title="youtube"
+                                          alt="youtube"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                  </td>
+                                </tr>
+                              </table>
+                                <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0; text-align: center">
+                    <!--[if (gte mso 9)|(IE)]>
+                                            <table width="100%" style="border-spacing: 0;" role="presentation">
+                                            <tr>
+                                            <td width="600" valign="top" style="padding: 0;">
+                                         <![endif]-->
+
+                    <table
+                      class="one-column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 0px 0px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <img
+                                  style="width: 600px; max-width: 100%"
+                                  src="https://i.postimg.cc/0Q51hsqC/vera-new-arrivals.jpg"
+                                  alt="vera-new-arrivals"
+                                />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <img
+                                  style="width: 600px; max-width: 100%"
+                                  src="https://i.postimg.cc/W39cvHNc/vera-shop-bags.jpg"
+                                  alt="vera-shop-bags"
+                                />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <img
+                                  style="width: 600px; max-width: 100%"
+                                  src="https://i.postimg.cc/Fz8tfkkP/vera-shop-sale.jpg"
+                                  alt="vera-shop-sale"
+                                />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <img
+                                  style="width: 600px; max-width: 100%"
+                                  src="https://i.postimg.cc/8cjQPmcJ/vera-shop-pattern.jpg"
+                                  alt="vera-shop-pattern"
+                                />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <img
+                                  style="width: 600px; max-width: 100%"
+                                  src="https://i.postimg.cc/YSzwXST9/vera-find-store.jpg"
+                                  alt="vera-find-store"
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                  </tr>
+                                </table>
+                                  <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col  -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                                              <table width="100%" style="border-spacing: 0;" role="presentation">
+                                              <tr>
+                                              <td width="600" valign="top" style="padding: 0;">
+                                           <![endif]-->
+
+                    <table
+                      class="one-column footer"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 0px 0px 0px">
+                          <table
+                            class="content"
+                            style="
+                              border-spacing: 0;
+                              width: 600px;
+                              max-width: 100%;
+                            "
+                            role="presentation"
+                          >
+                            <tr>
+                              <td style="padding: 0">
+                                <table
+                                  width="100%"
+                                  style="border-spacing: 0"
+                                  role="presentation"
+                                >
+                                  <tr>
+                                    <td
+                                      style="
+                                        text-align: center;
+                                        padding: 10px 0px 8px 0px;
+                                      "
+                                    >
+                                      <a
+                                        style="
+                                          color: #000000;
+                                          text-decoration: underline;
+                                          border: 0;
+                                          font-size: 12px;
+                                          font-family: 'Avenir', sans-serif,
+                                            Helvetica Neue, Arial, sans-serif;
+                                          border-right: 1px solid #000;
+                                          padding: 0px 5px;
+                                        "
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        Read Our Blog
+                                      </a>
+                                      <a
+                                        style="
+                                          color: #000000;
+                                          text-decoration: underline;
+                                          border: 0;
+                                          font-size: 12px;
+                                          font-family: 'Avenir', sans-serif,
+                                            Helvetica Neue, Arial, sans-serif;
+                                          padding: 0px 5px;
+                                        "
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        Customer Service
+                                      </a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                      <p
+                                        style="
+                                          text-align: center;
+                                          padding: 10px 0px;
+                                          margin: 0;
+                                          border: 0;
+                                          font-size: 11px;
+                                          font-family: 'Avenir', sans-serif,
+                                            Helvetica Neue, Arial, sans-serif;
+                                          color: #000000;
+                                        "
+                                      >
+                                        Vera Bradley · 12420 Stonebridge Road ·
+                                        Roanoke, IN 46783 USA · verabradley.com
+                                        <br />
+                                        To ensure our emails are delivered to
+                                        your Inbox, add
+                                        hello@m.verabradleymail.com to your
+                                        Address Book.
+                                      </p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td
+                                      style="
+                                        text-align: center;
+                                        padding: 10px 0px 8px 0px;
+                                      "
+                                    >
+                                      <a
+                                        style="
+                                          color: #000000;
+                                          text-decoration: underline;
+                                          border: 0;
+                                          font-size: 12px;
+                                          font-family: 'Avenir', sans-serif,
+                                            Helvetica Neue, Arial, sans-serif;
+                                          border-right: 1px solid #000;
+                                          padding: 0px 5px;
+                                        "
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        Privacy Policy
+                                      </a>
+                                      <a
+                                        style="
+                                          color: #000000;
+                                          text-decoration: underline;
+                                          border: 0;
+                                          font-size: 12px;
+                                          font-family: 'Avenir', sans-serif,
+                                            Helvetica Neue, Arial, sans-serif;
+                                          border-right: 1px solid #000;
+                                          padding: 0px 5px;
+                                        "
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        Email Preferences
+                                      </a>
+
+                                      <a
+                                        style="
+                                          color: #000000;
+                                          text-decoration: underline;
+                                          border: 0;
+                                          font-size: 12px;
+                                          font-family: 'Avenir', sans-serif,
+                                            Helvetica Neue, Arial, sans-serif;
+                                          padding: 0px 5px;
+                                        "
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        Unsubscribe
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                    <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+        </table>
+        <!-- End of container -->
+
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+      <!-- End of HTML EMAIL -->
+    </center>
+  </body>
+</html>
